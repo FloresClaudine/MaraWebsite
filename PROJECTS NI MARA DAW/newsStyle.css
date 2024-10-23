@@ -1,0 +1,42 @@
+body {
+    background: url(circle.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-position: center; 
+    height: 100vh; 
+    margin: 0; 
+    position: relative; 
+}
+
+body::after {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; 
+    filter: brightness(1.1) blur(20px);
+    z-index: 0;
+    opacity: 0.5;
+
+}
+
+.title-horizon {
+    text-align: left; 
+    margin-top: 20px; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.title-horizon h1 {
+    font-size: 120px; 
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    letter-spacing: 2px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    font-weight: normal; 
+    padding-top: 200px;
+    padding-left: 120px;
+}
